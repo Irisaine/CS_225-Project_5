@@ -1,20 +1,20 @@
 import javax.swing.*;
 import java.awt.*;
 
-public class TreeIcon implements Icon {
+public class SquareIcon implements Icon {
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
-        g.drawRect(x,y,10,50);
-
+        g.setColor(Color.BLACK);
+        g.fillRect(x,y,50,50);
     }
 
     @Override
     public int getIconWidth() {
-        return 0;
+        return 50;
     }
 
     @Override
     public int getIconHeight() {
-        return 0;
+        return 50;
     }
 }
