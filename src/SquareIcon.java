@@ -5,7 +5,7 @@ public class SquareIcon implements Icon {
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
         g.setColor(Color.BLACK);
-        g.fillRect(x,y,50,50);
+        g.fillRect(x,y,100,100);
     }
 
     @Override

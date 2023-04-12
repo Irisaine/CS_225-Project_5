@@ -18,7 +18,7 @@ public class CompositeIcon implements Icon {
     @Override
     public void paintIcon(Component c, Graphics g, int x, int y) {
         for (int i = 0; i < iconList.size(); i++) {
-            iconList.get(i).paintIcon(c, g, posList.get(i).x, posList.get(i).y);
+            iconList.get(i).paintIcon(c, g, posList.get(i).x+ x, posList.get(i).y + y);
         }
     }
 
