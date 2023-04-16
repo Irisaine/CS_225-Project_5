@@ -2,12 +2,25 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
+// CompositeIcon is a composite design pattern for holding multiple icons and printing them as a unit.  The iconList
+// holds each of the Icon object intended to be printed, while the posList holds an array of Point objects decscribing
+// their location.
+
 public class CompositeIcon implements Icon {
     private ArrayList<Icon> iconList;
+
     private ArrayList<Point> posList;
+
     public CompositeIcon() {
         iconList = new ArrayList<Icon>();
         posList = new ArrayList<Point>();
+    }
+    public ArrayList<Icon> getIconList() {
+        return iconList;
+    }
+
+    public ArrayList<Point> getPosList() {
+        return posList;
     }
 
     public void addIcon(Icon icon, int x, int y) {
